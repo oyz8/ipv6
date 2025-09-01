@@ -1,0 +1,19 @@
+{
+  "name": "StunWebHooks",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "@edgeone/ef-types": "^1.0.5",
+    "hono": "^4.9.4",
+    "edgeone": "^1.0.27",
+    "tencentcloud-sdk-nodejs-teo": "^4.1.99"
+  },
+  "devDependencies": {
+    "wrangler": "^4.4.0"
+  }
+}
